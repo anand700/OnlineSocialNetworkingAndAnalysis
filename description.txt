@@ -1,23 +1,18 @@
-Objective:
-
-Objective is to see the tweets of the user for Best Buy website and check if the tweet is positive or negative sentiment. 
-
+The objective is to see the tweets of the user for Best Buy website and check if the tweet is positive or negative sentiment. 
 Collect:
-Collecting the data based on the tweets posted on best buy website. Here I collect all the unique users and unique tweets. Retweets are not being considered. Collect.py - Displays all the users, users friends, friends overlap and the network.png shows how they are connected to each other.
+Collecting the data based on the tweets posted on the best buy website. Here I collect all the unique users and unique tweets. Retweets are not being considered. Collect.py - Displays all the users, users friends, friends overlap and the network.png shows how they are connected to each other.
 Populates : Tweets.csv, Tweets.pkl, users.pkl
-
 Cluster:
-The users are clustered, based on whether they are really following Best Buy or not. This is done by drawing a edge only if the users have mutual friends. Since they are random users, clusters are not properly made and hence I have 20 clusters to get a good distribution of users in clusters.
+The users are clustered, based on whether they are really following Best Buy or not. This is done by drawing an edge only if the users have mutual friends. 
 Populates : clusters.csv
-
 Classify:
 Uses : train.csv, stopwords.txt
 a. loads data from tweets.pkl file
 b. parse this data
 c. write it to the csv file
-d. Step 1 is to clean the tweets based on several cleaning parameters : 
+d. Step 1 is to clean the tweets based on several cleaning parameters: 
 	1. normalize everything to lower case
-	2. remove http links and replace it with a the term "URL"
+	2. remove http links and replace it with a term "URL"
 	3. Convert all twitter handles to the term AT_USER
 	4. Remove stop words
 	5. Remove words that do not start with a letter
