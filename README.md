@@ -21,15 +21,9 @@ cluster.py: This reads the data collected in the previous step and uses communit
 classify.py: Classifies the data by detecting the sentiment. This also writes to files to save the results.
 
 summarize.py: Summarizes all the steps above by showing the following:
-
-Number of users collected
-
-Number of messages collected
-
-Number of communities discovered
-
-Average number of users per community
-
-Number of instances per class found
-
-One example from each class
+1. Number of users collected
+2. Number of messages collected
+3. Number of communities discovered
+4. Average number of users per community
+5. Number of instances per class found
+6. One example from each class
