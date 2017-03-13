@@ -1,4 +1,8 @@
+**************************************************************************************************************************************
+Introduction
+**************************************************************************************************************************************
 Open-ended exploration of online social networking.
+**************************************************************************************************************************************
 
 The goal is to analyze how the users have tweeted about Best Buy by using the screen name: #bestbuy. This is done by collecting users and their tweets, detecting communities by calculating the betweenness and classifying the tweets by sentiment analysis.
 
